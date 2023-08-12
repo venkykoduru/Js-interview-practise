@@ -1,2 +1,2 @@
 # Js-interview-practise
-JS practise  challanges
+JS practise coding challanges

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login form</title>
+    </head>
+    <body>
+        
+            <legend>Login</legend>
+            <input type="text" id="uname" placeholder="Enter user name">
+            <br><br>
+            <input type="password" id="upassword" placeholder="Enter password">
+            <br><br>
+            <button onclick="my_func()">Login</button>
+            <br>
+            <h1 id="Status"></h1>
+        </fieldset>
+        </body>
+            <script>
+                function my_func(){
+                document.getElementById("uname").value == "Venky" && document.getElementById("upassword").value =="Venky@123" 
+                  ? document.getElementById("Status").innerHTML="Login success" : document.getElementById("Status").innerHTML="Login fail";
+
+                }      
+            </script>
+                
+           
+            
+            
+        
+
+</html>

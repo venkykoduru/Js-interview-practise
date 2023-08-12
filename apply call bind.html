@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+        <title>Apply, call,bind</title>
+    </head>
+    <body>
+        <script>
+      function names(param1,param2,param3){
+        document.write(this.key1 + " " + param1 + " "+ param2 + " "+ param3)
+       }
+       obj={
+        key1:5,
+       }
+       names.bind(obj,10,20,30) 
+    </script>
+
+
+    </body>
+</html>

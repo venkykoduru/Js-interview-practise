@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<body>
+    <head>
+
+    </head>
+    <!-- <style>
+        body{
+            text-align:center;
+            margin:100px auto;
+        }
+        button{
+            color:blue;
+            
+      
+        }
+    </style> -->
+    <body>
+        <h1 id="res">Hello world</h1>
+        <button id="mybutton">Click here</button>
+    
+
+    <script>
+       
+
+    //     function value(){
+
+            // difference between var and let and const
+    // // console.log(x)
+    // //     }
+    // //     value()
+
+    // const n= {"name": "venky", "age": 25}
+
+    // n.age=125
+    // n.name= "Bramhi"
+    // console.log(n)
+
+    // function difference(){
+    //     var x= 24
+    //     if(true){
+    //         let y=30
+    //         const z=40
+    //         console.log(x,y,z)
+    //     }
+    //     console.log(x)
+    // }
+    // difference()
+
+    // function hoist(){
+    //     var a= 20
+    //     let b=30
+    //     const c= 40
+    //     console.log(a,b,c)
+
+    // }
+    // hoist()
+    //     let z= 50
+    // {
+    //     var k= 45
+    //     let z= 25
+    //     const w = 100
+    //     z=40
+    //     w=120
+    //     console.log(k,z,w)
+    // }
+    // console.log(k)
+    // console.log(z)
+        // console.log(x)
+        // var x=10
+
+
+        // function hoisting
+        //  c()
+        //   var c= function (){
+        //  console.log("hello")
+        //  }
+
+    // difference between undefined and not defined
+         // undefined
+            //     var x
+            // console.log(x)
+            // output: undefined
+        // undefined
+
+        //console.log(y)
+        //out put :y is not defined
+        //  not defined
+
+        // Temporal dead zone.
+        //Temporal dead zone behaves that occur whe trying to access the variable before it has been  declared.This meaeans if you try to access the variablebefore declaration, "you will get a Reference Error"
+         //console.log(y)
+         //let x= 10
+         // out put: ReferenceError
+
+        // null: null means the variable which has been assigned as null but contains no value
+        // let x = null
+        // console.log(x)
+        // output:null
+
+        //undefined: variable has been declared but value is not assign
+         
+    //  let x
+    //  console.log(x)
+    // output : undefined
+
+     // typeof operator
+
+    //  let n= 25
+    //  console.log(typeof(n))
+
+    //  let x= "hello"
+    //  console.log(typeof(x))
+
+   // non primitive data type RegExp
+  
+
+//    const original= "Hello sir!.Good evening sir!"
+//    const modifyName=/sir/g
+//    const Replacement= "venky"
+   
+//    const finalvalue=original.replace(modifyName,Replacement)
+//    console.log(finalvalue)
+
+
+// const originalString = 'Hello, this is a test string. Hello there!';
+// const searchString = /Hello/g; // Regular expression to find all occurrences of "Hello"
+// const replacement = 'Hi';
+
+// const modifiedString = originalString.replace(searchString, replacement);
+// console.log(modifiedString);
+            
+    
+//  how to write object:
+
+// const details={
+//     name:"venky",
+//     age:27,
+//     address:{
+//         address1:"godiyada",
+//         address2:"vizag"
+//     }
+// }
+// console.log(details.name)
+// console.log(details.address.address1)
+// console.log(details.address.address2)
+        
+// Array: in jAvascript, an array is a special data type is used to store collection of elements.
+// * Array is used to store  group of multiple value store in a single varible.
+// Array contian stores a different  data types which are strings,booleans, numbers,objects.
+// Each element of array associated with  a index starting from 0 for first element, 1 for the second element
+
+// const fruits= ['apple', 'banana','grape','orange']
+
+// console.log(fruits)
+
+// console.log(fruits[1])
+// console.log(fruits[3])
+
+// fruits[1] ='papaya'
+// console.log(fruits)
+// fruits.push("kiwi")
+// fruits.pop('kiwi')
+
+// for(let i=0; i=fruits.length; i++){
+//     console.log([i])
+// // }
+
+//  const x=[10,20,30,40,50]
+
+// const y=x.map((index,element)=>{
+//       return element*2
+// })
+// console.log(y)
+
+//  const a= ["apple","banana", "choclate"]
+
+//  const q=a.map((index, element,a)=>{
+//     console.log(index,element,a)
+    
+//     return "rose"
+  
+    
+//  })
+//  console.log(q)
+ 
+
+// let numbers=[2,4,6,8]
+
+// let x=numbers.map((ele,id,a)=>{
+//     console.log(a)
+//     return ele *2
+// }) 
+// console.log(x)
+
+//Filter Method:
+// filter() method is a built in function that opearats  array allows  you to create a new array containg elements must meet the criteria.It does this by through itarating the each element by applying a call back function to detemint  whether the element must should be included in the new array
+
+// const  value=[2,4,6,8,10]
+// let x=value.filter((ele)=>{
+//     console.log(ele)
+//         return
+//     })
+//     console.log(x)
+    
+
+// Reduce method:
+
+
+
+// const y=[1,2,3,4,5,6]
+
+// const sum=y.reduce((acc, ele)=> acc+ele, 10)
+
+// console.log(sum)
+    
+
+// students=[
+//     {
+//         name:"venky",
+//         score:471
+//     },
+//     {
+//         name:"akhi",
+//         score:560
+//     },
+//     {
+//         name:"subbu",
+//         score:500
+//     },
+//     {
+//         name:"satish",
+//         score:430
+//     },
+//     {
+//         name:"kiran",
+//         score:520
+//     },
+
+
+// ]
+//     const names=
+// students.map((ele,id,a)=>{
+//     return ele.name
+// })
+// console.log(names)
+
+
+// const list=[2,4,6,10]
+
+// const res=list.reduce((acc,ele,index,a)=>{
+
+//    let temp= acc+ele
+//     if(index==list.length-1){
+//         return temp/2
+//     }else
+//         temp
+    
+// },0)
+// console.log(res)
+
+
+// const numbers = [1,2,3,4,5]
+
+// const sum=numbers.reduce((acc,ele)=>{
+//     return acc+ele/3
+// },0)
+// console.log(sum)
+
+
+// const numbers = [175, 50, 25];
+
+// const res=numbers.reduce((acc,ele)=>{
+//     return acc-ele
+// },2)
+// console.log(res)
+
+
+// let num=[1,2,3,4,5]
+
+// let mapMethod=num.map((ele,index,arr)=>{
+//     return  arr[index]+=2
+// })
+
+// let forEachmethod=num.forEach((ele , index,arr)=>{
+//     return   arr[index]+=2
+// })
+// console.log("map method:",mapMethod)
+// console.log("forEach method:",forEachmethod)
+
+// console.log(num)
+
+// const x=[1,2,3,4,5]
+
+// const y=x.forEach((ele,index,arr)=>{
+//     ele[index] +=2
+//     console.log(x)
+// })
+// console.log(x)
+
+//LOOPS:
+// A loop is a  programming way to run a set of  instruction repetedly until set of condition is met
+
+// for loop :
+// For loop allows you to ittirate a block of code a specific number of times
+//ex:
+//  for (let i=0;i<10; i++){
+//     console.log(i)
+//  }
+// output:1,2,3,4,5,6,7,8,9
+
+ // while-loop: while loop  executes a block of code while a certain condition is true.It dependence on condition only
+
+//  let j=0
+//  while(j<6){
+//     console.log(j)
+//     j++
+//  }
+// output: 1,2,3,4,5
+
+// do-while : do while is  similary to while loop  except block of code execute at least once.even condition is  false
+//  let k=1
+ 
+//  do{
+//     console.log(k)
+//     k++
+//  } while(k>1)
+//output is 0
+
+
+//for..of -loop
+ // for.. of loop is used to loop through the values of an object like arrays, objects.
+ // It allows you to acces the values of an object without having   to use an index
+
+//   let arr=[1,2,3,4,5]
+//   for(let val of arr){
+//     console.log(val)
+//   }
+
+//for in loop: for loop is used to loop through  properties of an object
+
+// It allows you to  itiarate over the keys of an object access the values associated with  those keys
+
+// const person={
+//     name:'pavan',
+//     age:26,
+//     role:'Developer'
+// }
+// for(let key in person){
+//     console.log(person[key])
+// }
+// output: pavan 26 developer
+
+
+// const array= [10,20,30,40]
+// const arr=array.forEach((res)=>{
+//    console.log(res)
+   
+// })
+
+// const person={
+//     name:"prem",
+//     age:25,
+//     role:'Developer'
+
+// }
+//  Object.values(person).forEach(function(values){
+//     console.log(values)
+//  })
+
+// function add(a,b){
+//     return a + b
+// }
+// console.log(add(2,3))
+
+// function expression:
+// A function is a way to define a function in javascript by assignig it to a variable
+//example
+//  const add= function(a,b){
+//     return a+b
+//  }
+//  console.log(add(3,4))
+
+// named function: 
+  // Named function in javascript, A function that has a name identifier assigned to it. named functions are explecitley given  a name than can be used to call or reference the function
+    // function add(a,b){
+    //     return a*b
+    // }
+    // console.log(add(4,5))
+
+    //anomynus function:
+// A function that doesnt have  assign  name identifier, normally we use the function keyword before the name to define a function in javascript.
+//example:
+//  console.log(function(a,b){
+//     return a+b
+//  }(6,4))
+//output:10
+
+ // arrow functions:
+ // arrow functions are also known as fat allow function.arrow functions are concise syntax for defining functions in javascript
+
+//   const mul= ((param1,param2,param3)=>param1 * param2 * param3)
+//   console.log(mul(2,5,4))
+// output: 40
+
+//   const add= ((x,y)=>x+y)
+//   console.log(add(4,5))
+// output: 9
+
+// Callback function:
+// A call back function  that is passed an argument to another function.
+//   function add(x,y){
+//     return x+y
+//   }
+//     let a=3 , b=6
+    
+//     let value=add(a,b)
+//     console.log(value)
+//output:9
+
+    // function sub(x,y){
+    //         return x-y
+    // }
+    // let a=8,b=6
+    // let res=sub(a,b)
+    // console.log(res)
+
+ // how to use call back functions in realtime
+ // We can use call back functions in realtime
+  // we use in itirations,
+//  eventhandling,
+//  asynchronus operators,
+//  higherorder functions,
+//  promises.
+
+// how to use callback functions in itirations
+
+// in forEach we create variable and assign the values and we create a function and passed as a argument in for
+
+//  const arr=[1,2,3,4]
+
+//  function values(num){
+//     console.log(num)
+//  }
+// arr.forEach(values)
+
+        // const Button=document.getElementById('mybutton')
+        // const Res=document.getElementById('res')
+        // Button.addEventListener("click",function(){
+        //     Res.textContent= "Hello welcome to javascript"
+        // })
+
+        // document.getElementById('mybutton').addEventListener('click', function(){
+        // document.getElementById('res').textContent='Hello welcome to javascript world'
+        // })
+    // function mathOperations(x,y, operation){
+    //     return operation(x,y)
+    // }
+    // function add(a,b){
+    //     return a+b
+    // }
+    // function sub(a,b){
+    //     return a-b
+    // }
+
+    // const res1=mathOperations(2,5, add)
+    // const res2=mathOperations(6,3,sub)
+    // console.log(res1) output:7
+    // console.log(res2) output:9
+
+    // function names(name){
+    //     name()
+    // }
+    // names(list)
+    // function list(finalname){
+    //     console.log('venky koduru')
+    // }
+    // output: 'venky koduru'
+
+    
+    // const person={
+    //     name:"venky",
+    //     age:27
+        
+    // }
+    // const Details=((obj)=>{
+    //     const objkeys= Object.keys(obj)
+    //     console.log(objkeys)
+    // })
+    // Details(person)
+
+//     const details={
+//         name:"venky koduru",
+//         bg:{
+//             age:27,
+//         role:'developer'
+//         }
+       
+
+//     }
+
+//     const {name,  bg:{age=30,role}} = details
+
+//    console.log(name)
+//    console.log(age)
+//    console.log(role)
+
+
+ const marks=[430,520,480]
+
+ const [ravi, kiran, manoj]=marks
+
+ console.log(`ravi marks:${ravi}`)
+ console.log(`kiran marks:${kiran}`)
+ console.log(`manoj marks:${manoj}`)
+
+    </script>
+    </body>
+</html>

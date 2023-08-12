@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+    </head>
+    <body>
+      <h3> Register for application form</h3>
+        <fieldset>
+            <legend>Register form</legend>
+
+            <form name="Register form" onsubmit="return register()">
+                <table>
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" 
+                                   name="fname"
+                                   placeholder="Enter user name"></td>
+                        <td><span  id="fname_span" style="color:red"></span></td>
+                    </tr>
+
+                     <tr>
+                        <td>Last name:</td>
+                        <td><input type="text" 
+                                   name="lname"
+                                   placeholder="Enter last name"></td>
+                        <td><span  id="lname_span" style="color:red"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" 
+                            placeholder="Enter email address"></td>
+                        <td><span  id="email_span" style="color:red"></span></td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Confirm password:</td>
+                        <td><input type="upwd" 
+                            name="upwd" 
+                            placeholder="Enter password"></td>
+                        <td>
+                            <td><span  id="upwd_span" style="color:red"></span></td> 
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Re-enter password:</td>
+                        <td><input type="rupwd" 
+                            name="rupwd" 
+                            placeholder="renter password"></td>
+                        <td>
+                            <td><span  id="rupwd_span" style="color:red"></span></td> 
+                        </td>
+                    </tr>
+
+                         <tr>
+                        
+                            <td>Contact number:</td>
+                        <td><input type="number" 
+                            placeholder="Enter mobile  number"></td>
+                        <td><span  id="number_span" style="color:red"></span></td>
+                     </tr>
+                     <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="gender" value="male">male
+                            <input type="radio" name="gender" value="female">female
+                        </td>
+                     </tr>
+                        <tr>
+                            <td>Select location</td>
+                            <td>
+                                <input type="checkbox" value="Delhi">Delhi
+                                <input type="checkbox" value="Chennai">Chennai
+                                <input type="checkbox" value="Bangolre">Bangolre
+                                <input type="checkbox" value="pune">pune
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Select course</td>
+                            <td>
+                                
+                                <select type="dropdownbox" name="select course" value="select course">
+                                <option>Html</option>
+                                <option>Css</option>
+                                <option>JavaScrtipt</option>
+                                </select>
+                                
+                            </td>
+                         </tr>
+
+
+                        <td>
+                            <input type="submit" value="Register">
+                        </td>
+                        <td>
+                            <input type="reset" value="reset">
+                        </td>
+                    </tr>    
+
+                 </table>
+            </form>
+            </fieldset>
+
+
+            <script>
+              function register(){
+                let fname=document.forms["Register form"]["fname"].value;
+                let fname_span=document.getElementById("fname_span");
+                let fname_arr=[];
+                if(/^$/.test(fname)){
+                    fname_arr.push("Can't be blanked");
+                }
+                fname_span.innerText=fname_arr.join(",");
+
+                let lname=document.forms["Register form"]["lname"].value;
+                let lname_span=document.getElementById("lname_span");
+                let lname_arr1=[];
+                if(/^$/.test(lname)){
+                    lname_arr1.push("Can't be blanked");
+                
+                }
+                lname_span.innerText=lname_arr1.join(",");
+
+                let email=document.forms["Register form"]["email"].value;
+                let email_span=document.getElementById("email_span");
+                let email_arr6=[];
+                if(/^$/.test(email)){
+                    email_arr6.push("Can't be blanked")
+                }
+                email_span.innerText=email_arr6.join(",");
+                
+
+                let upwd=document.forms["Register form"]["upwd"].value;
+                let upwd_span=document.getElementById("upwd_span");
+                let upwd_arr3=[];
+                if(/^$/.test(upwd)){
+                    upwd_arr3.push("can't be blanked");
+                }
+                
+                else if(!/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9](?=.*[!@#$%^&*","._])).{6,8}$/.test(upwd)){
+                    upwd_arr3.push("Must follow pattern");
+                }
+                upwd_span.innerText=upwd_arr3.join(",");
+
+                let rupwd=document.forms["Register form"]["rupwd"].value;
+                let rupwd_span=document.getElementById("rupwd_span");
+                let rupwd_arr4=[];
+                if(/^$/.test(rupwd)  || upwd== null){
+                    rupwd_arr4.push("can't be blanked");
+                }
+                else if(upwd!=rupwd){
+                    rupwd_arr4.push("Must match with confirm password");
+                }
+                rupwd_span.innerText=rupwd_arr4.join(",");
+
+                
+         
+                
+                
+                return false;
+             }
+                    
+
+
+                
+            </script>
+
+
+    </body>
+    
+</html>

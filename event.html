@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event bubbling</title>
+        <style>
+            #parent{
+                width:300px;
+                height:300px;
+                background-color: blueviolet;
+                color:white;
+                text-align:center;
+                
+            }
+            #child{
+                width:260px;
+                height:260px;
+                background-color: brown;
+                text-align:center;
+                color:azure;
+                
+                margin-left:30px;
+                
+            }
+            #subchild{
+                width:220px;
+                height:220px;
+                background-color:chartreuse;
+                text-align:center;
+                color:azure;
+                margin-left:20px;
+                
+                
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="parent">
+            parent
+            <div id="child">
+                child
+                <div id="subchild">
+                    subchild
+                </div>
+            </div>
+        </div>
+        
+        <script>
+           // document.getElementById("parent").addEventListener("click",()=>{
+                //console.log("parent clicked");
+           // },false);
+           // document.getElementById("child").addEventListener("click",()=>{
+              //  console.log("child clicked");
+            //},false);
+            //document.getElementById("subchild").addEventListener("click",()=>{
+                   // console.log("subchild clicked");
+           // },false);
+
+
+
+                document.querySelector("#parent").addEventListener("click",()=>{
+                    console.log("parent");
+                },false);
+
+                document.querySelector("#child").addEventListener("click",()=>{
+                    console.log("child");
+                },false);
+                document.querySelector("#subchild").addEventListener("click",()=>{
+                    console.log("subchild");
+                },false);
+
+
+
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
